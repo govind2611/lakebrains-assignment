@@ -42,3 +42,8 @@ function closePopupFunction() {
   overlayContainer.style.display = "none";
   popupContainer.style.display = "none";
 }
+
+function clearInput() {
+    const cityInputElement = document.getElementById("cityInput");
+    cityInputElement.value = "";
+  }
