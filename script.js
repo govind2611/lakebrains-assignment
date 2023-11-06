@@ -25,7 +25,7 @@ function searchWeatherFunction() {
       popupContainer.style.display = "block";
     })
     .catch((error) => {
-      console.error("Error fetching weather data: ", error);
+      console.error(error);
     });
 }
 
@@ -36,9 +36,9 @@ function handleKeyDownEvent(event) {
 }
 
 function closePopupFunction() {
-    const overlayContainer = document.getElementById("overlayContainer");
-    const popupContainer = document.getElementById("popupContainer");
+  const overlayContainer = document.getElementById("overlayContainer");
+  const popupContainer = document.getElementById("popupContainer");
 
-    overlayContainer.style.display = "none";
-    popupContainer.style.display = "none";
+  overlayContainer.style.display = "none";
+  popupContainer.style.display = "none";
 }
